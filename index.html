@@ -3,9 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>English janal</title>
+  
+  <title> English Janala</title>
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+ 
+
+  <!-- tailwind + daisy UI  -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- fontawesome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+
+
+      <!-- bangla font  -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+
+      <style>
+    body{
+       font-family: "Open Sans", sans-serif;
+    }
+
+    .font-bangla{
+      font-family: "Tiro Bangla", serif;
+    }
+      </style>
 </head>
 <body>
+ <header>
+<nav class=" bg-blue-50 border-b-2 border-gray-300 ">
+  <div class=" max-w-10/11 mx-auto flex justify-between pt-2 pb-2">
+    
+    <div class="navbar-start ">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class=" btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul tabindex="-1" class="menu bg-base-200 menu-sm dropdown-content shadow-sm z-1 mt-4 w-52 p-2 ">
+          <li><a>FAQ</a></li>
+          <li>
+            <a>Learn</a>
+            
+          </li>
+          <li><a>Logout</a></li>
+        </ul>
+      </div>
+      <div class="btn btn-ghost text-xl"> <p>English</p> 
+        <img src="assets/logo.png" alt=""><p class="font-bangla">জানালা</p></div>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 gap-2">
+        <li><a class="btn btn-primary btn-outline w-30"><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
+        <li>
+          
+            <a class="btn btn-primary btn-outline w-30"><i class="fa-solid fa-book-open"></i>Learn</a>  
+        </li>
+        <li><a class="btn btn-primary btn-outline w-30"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+      </ul>
+    </div> 
+    
+  </div>
+</nav>
+ </header>
+
+ <main class="max-w-10/11 mx-auto ">
+  <section class="banner flex flex-col-reverse lg:flex-row items-center gap-28 mb-50">
+    <div class="flex flex-col mt-[-40px] sm:mt-[30px] ">
+      <h1 class="text-5xl font-bold "><span class="text-[#00BCFF]">English</span> is Easy!!</h1>
+      <p class="mb-5 mt-5">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি <br> নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons
+      আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+      <div class="space-y-5 flex flex-col">
+       
+          <input  type="text" class="input" placeholder="Type here" />
+          <input type="password" class="input" placeholder="your password"/> 
+          <button class="btn btn-primary w-30">Get Started</button>
+          
+        
+      </div>
+    </div>
+    <div class="banner-img"> 
+      <img src="assets/hero-student.png" alt="">
+    </div>
+  </section>
+<section>
+  <h2 class="text-4xl font-bold text-center"><span class="text-blue-400">Let's</span> Learn Vocabularies</h2>
+
+  <div id="level-container"></div>
+</section>
+ </main>
+
+ <footer></footer>
   
+
+ <script src="js/script.js"></script>
 </body>
 </html>
